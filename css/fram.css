@@ -10,7 +10,7 @@ html,body{
 	/*height: 1000px;*/
 }
 body{
-	background:url(../img/background.png) 0 0 no-repeat fixed;
+	background:url(../img/Bristle Grass.jpg) 0 0 no-repeat fixed;
 }
 #sm-table{
 	padding: 48px 0 0;
@@ -31,9 +31,9 @@ a:hover{
 	text-decoration: none;
 }
 
-@media only screen and (max-width: 768px){
+/*@media only screen and (max-width: 768px){
 	body{
 		background-position: -200px 0px;
 	}
 	
-}
+}*/
