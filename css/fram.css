@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.bor{
+	border: 1px red solid;
+}
+html,body{
+	width: 100%;
+	/*height: 1000px;*/
+}
+body{
+	background:url(../img/background.png) 0 0 no-repeat fixed;
+}
+#sm-table{
+	padding: 48px 0 0;
+	background-color: rgba(250,250,250,0.7);
+	width: 100%;
+	height: 100%;
+}
+.separate{
+	width: 100%;
+	border-top: 1px #333 solid;
+	margin:20px 0px;
+}
+.footer{
+	margin-bottom: 10px;
+	text-align: right;
+}
+a:hover{
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 768px){
+	body{
+		background-position: -200px 0px;
+	}
+	
+}
