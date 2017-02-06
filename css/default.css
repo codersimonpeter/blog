@@ -10,7 +10,7 @@ html,body{
 	/*height: 1000px;*/
 }
 body{
-	background:url(../img/BristleGrass.png) 0 0 no-repeat fixed;
+	background:url(../img/1.png) 0 0 repeat fixed;
 }
 #sm-table{
 	padding: 48px 0 0;
