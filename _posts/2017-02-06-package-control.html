@@ -20,7 +20,7 @@ description: Sublime Text 3 中安装Package Control 时出现错误码275309的
      我的第一反应就是，难道sublime被损坏了？于是我卸载了sublime 3 ，并在官网重新下载了sublime text 3 的最新版本<a href="http://www.sublimetext.com/3">官网地址</a>。然后重新安装package control。<br>
 PS：安装代码会不停的更新，所以有时候在网上找的安装code不一定能用。在官网去找就好了<a href="https://packagecontrol.io/installation">Package Control官网地址</a>。<br> 
 但是，在console输入安装code之后 ，程序假死，然后过了一段时间弹出错误码:275309<br>
-<img src="{{ site.baseurl }}/img/2017-02-06/error.png" alt=""><br>
+<img src="{{ site.baseurl }}img/2017-02-06/error.png" alt=""><br>
  然后就没有然后了。。。<br>
 这个时候你再打开package control面板的时候，依然是没有install package的选项的。翻了一会儿Google之后，在stackoverflow上面发现这样一篇帖子：
 <blockquote>
@@ -29,9 +29,9 @@ PS：安装代码会不停的更新，所以有时候在网上找的安装code�
 </blockquote>
 
 即sublime升级到build 3124的时候（当前build3126依旧没有修复）package control被移到了ignored_packages里面。也就是说，其实package control并没有出现问题，只是被设置忽略掉了（因为被莫名移动到ignored_packages）。<br>	
-<img src="{{ site.baseurl }}/img/2017-02-06/ignore.png" alt="ignore"><br>
+<img src="{{ site.baseurl }}img/2017-02-06/ignore.png" alt="ignore"><br>
 因此，从ignored_packages 清单移除package control 就可以解决了（或者删掉整个ignored—packages）。<br>
-<img src="{{ site.baseurl }}/img/2017-02-06/ignore-2.png" alt="ignore"><br>
+<img src="{{ site.baseurl }}img/2017-02-06/ignore-2.png" alt="ignore"><br>
 解决办法：<br>
 <strong>
 <code>CMD</code>+<code>,</code>， 或者<code>Sublime Text</code> -> <code>Preferences</code> -> <code>Setting</code>进入设置（Windows或汉化版下请自行对照），把package control那行删掉或者注释掉，保存，重启sublime text就可以了。</strong>
